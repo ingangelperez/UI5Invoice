@@ -9,7 +9,7 @@ sap.ui.define([
         "use strict";
 
         return Controller.extend("aapg.sapui.controller.App", {
-
+            //Comentario
             onInit: function () {
                 //Set content density class
                 this.getView().addStyleClass(this.getOwnerComponent().getContentDensityClass());

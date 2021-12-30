@@ -1,0 +1,32 @@
+<mvc:View xmlns="sap.m" 
+          xmlns:mvc="sap.ui.core.mvc" 
+          xmlns:core="sap.ui.core"
+          xmlns:customControl="aapg.sapui5.control"
+          controllerName="aapg.sapui5.controller.Details">
+
+    <Page id="pageDetail" 
+          title="{i18n>InvoiceDetails}"
+          showNavButton="true"
+          navButtonPress=".onNavBack">
+        <ObjectHeader title="{northwind>Quantity} x {northwind>ProductName}"
+                      responsive="true"
+                      fullScreenOptimized="true">
+            <attributes>
+                <ObjectAttribute text="{northwind>ShipName}"/>
+                <ObjectAttribute text="{northwind>ShipAddress}"/>
+                <ObjectAttribute text="{northwind>ShipCity}"/>
+                <ObjectAttribute text="{northwind>ShipRegion}"/>
+                <ObjectAttribute text="{northwind>ShipPostalCode}"/>
+                <ObjectAttribute text="{northwind>ShipCountry}"/>
+                <ObjectAttribute text="{northwind>ShipCustomerID}"/>
+                <ObjectAttribute text="{northwind>ShipCustomerName}"/>
+            </attributes>
+        </ObjectHeader>
+    
+        <customControl:ProductRating id="rating" 
+                                     class="sapUiSmallMarginBeginEnd" 
+                                     change=".onRatingChange"/>
+
+    </Page>
+    
+</mvc:View>

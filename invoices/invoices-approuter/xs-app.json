@@ -1,0 +1,22 @@
+{
+    "welcomeFile": "/index.html",
+    "authenticationMethod": "none",
+    "logout": {
+        "logoutEndpoint": "/do/logout"
+    },
+    "routes": [
+        {
+            "authenticationType": "none",
+            "source": "^/Northwind/(.*)$",
+            "destination": "Northwind",
+            "csrfProtection": false,
+            "target": "$1"
+        },
+        {
+            "authenticationType": "xsuaa",
+            "source": "^(.*)$",
+            "service": "html5-apps-repo-rt",
+            "target": "$1"
+        }
+    ]
+}

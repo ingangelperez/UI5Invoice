@@ -11,7 +11,7 @@ sap.ui.define([
      */
     function (Controller, History, UIComponent) {
         "use strict";
-
+        //Comentario 2 
         return Controller.extend("aapg.sapui.controller.Details", {
 
             onInit: function () {
